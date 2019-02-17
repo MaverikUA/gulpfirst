@@ -57,5 +57,5 @@ gulp.task('watch', function() {
     gulp.watch('app/js/**/*.js', browserSync.reload);
 })
 
-gulp.task('default', gulp.parallel('watch', 'css-libs', 'scripts', 'browser-sync'));
+gulp.task('default', gulp.parallel('browser-sync', 'scripts', 'css-libs', 'watch' ));
 
